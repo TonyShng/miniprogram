@@ -1,27 +1,84 @@
 /* pages/home.wxss */
 
 page {
-  background-color: #f8f8f8;
-  height: 100%;
-  font-size: 32rpx;
-  line-height: 1.6;
-}
-
-.page-body {
-  padding-top: 60rpx;
-}
-
-.page-section {
   width: 100%;
-  margin-bottom: 60rpx;
+  background-color: rgb(240, 239, 239);
 }
 
-.page-section-spacing{
-  box-sizing: border-box;
-  padding: 0 80rpx;
+.slide-image {
+  width: 100%;
 }
 
-.swiper-item{
-  display: block;
-  height: 150px;
+.main1 {
+  width: 100%;
+}
+
+.foritm {
+  float: left;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgb(230, 239, 239);
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.itemImage {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.itmTitle {
+  width: 100%;
+  margin-bottom: 5px;
+  border-style: solid;
+  border: solid rgb(203, 179, 226) 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.itmAmt {
+  width: 100%;
+  height: 60rpx;
+  float: left;
+  border: solid rgb(203, 179, 226) 0px;
+  font-size: 12px;
+}
+
+.itmSale {
+  width: 50%;
+  height: 60rpx;
+  float: right;
+  border: solid rgb(203, 179, 226) 0px;
+}
+
+.itmTitle1 {
+  height: 100%;
+  width: 90%;
+}
+
+.itmAmt1 {
+  height: 100%;
+  line-height: 100%;
+  float: left;
+  text-decoration: line-through;
+  font-style: oblique;
+  color: coral;
+  padding-left: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itmAmt2 {
+  height: 100%;
+  line-height: 100%;
+  float: left;
+  padding-left: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

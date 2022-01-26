@@ -1,14 +1,26 @@
 <!--pages/home.wxml-->
-<view class="container">
-  <view class="page-body">
-    <view class="page-section page-section-spacing swiper">
-      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-        <block wx:for="{{background}}" wx:key="*this">
-          <swiper-item>
-            <view class="swiper-item {{item}}"></view>
-          </swiper-item>
-        </block>
-      </swiper>
+<view class="main1">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{activeColor}}" circular="{{circular}}">
+    <block wx:for="{{imgUrls}}" wx:key="banner">
+      <swiper-item>
+        <navigator url="{{item.link}}" hover-class="navigator-hover">
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill" width="{{bannerWidth}}" height="{{bannerHeight}}}" />
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view style="margin-left: {{itemBorderWidth}}px" wx:for="{{array}}" wx:key="item">
+    <view class="foritm" style="width: {{itemWidth}}px;border-width: {{itemBorderWidth}}px;">
+      <image src="{{item.img}}" mode="aspectFill" style="width: {{itemWidth}}px; height: {{itemHeight}}px;" class="itemImage"></image>
+      <view>
+        <view class="itmTitle">
+          <view class="itmTitle1">{{item.txt}}</view>
+        </view>
+        <view class="itmAmt">
+          <view class="itmAmt1">{{item.up1}}元</view>
+          <view class="itmAmt2">{{item.up2}}元</view>
+        </view>
+      </view>
     </view>
   </view>
 </view>
