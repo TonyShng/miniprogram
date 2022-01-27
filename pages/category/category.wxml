@@ -13,8 +13,8 @@
         <view class="nav_right_items">
           <!-- 界面跳转 -->
           <navigator url="../home/home">
-            <image src="{{item.image}}"></image>
-            <text>{{item.name}}</text>
+            <image src="{{item.img}}"></image>
+            <text>{{item.txt}}</text>
           </navigator>
         </view>
       </block>
